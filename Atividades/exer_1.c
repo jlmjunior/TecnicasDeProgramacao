@@ -22,11 +22,11 @@ int BuscaMaior(int *p)
     for (int i = 0; i < SIZE; i++)
     {
         if (*p > maior)
-		{
-	        maior = *p;
-		}
+        {
+            maior = *p;
+        }
 
-	    p++;
+        p++;
     }
 
     return maior;
