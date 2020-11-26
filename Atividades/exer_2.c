@@ -33,15 +33,15 @@ void Contar(char *p)
 
         p++;
     }
-
+	
     printf("Vogais: %d\n", countVogais);
     printf("Consoantes: %d", countConsoantes);
 }
 
 int main()
 {
-	char vetor[50] = "string\0";
-	char *p = vetor;
+    char vetor[50] = "string\0";
+    char *p = vetor;
 
-	Contar(p);
+    Contar(p);
 }
