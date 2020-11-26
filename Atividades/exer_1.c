@@ -14,7 +14,7 @@ Resultado esperado:
 O maior elemento é: 9
 */
 
-#include <stdio.h>
+#include <stdio.h> 
 
 #define SIZE 100
 
