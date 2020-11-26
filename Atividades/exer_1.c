@@ -14,31 +14,31 @@ Resultado esperado:
 O maior elemento é: 9
 */
 
-#include <stdio.h> 
+#include <stdio.h>
 
 #define SIZE 100
 
 int BuscaMaior(int *p)
 {
-	int maior = *p;
+    int maior = *p;
 
-	for (int i = 0; i < SIZE; i++)
+    for (int i = 0; i < SIZE; i++)
+    {
+        if (*p > maior)
 	{
-		if (*p > maior)
-		{
-			maior = *p;
-		}
-
-		p++;
+	    maior = *p;
 	}
+
+	p++;
+    }
 
     return maior;
 }
 
 int main()
 {
-	int vetor[SIZE] = { 5, 7, 2, 9, 8 };
-	int *p = vetor;
+    int vetor[SIZE] = { 5, 7, 2, 9, 8 };
+    int *p = vetor;
 
-	printf("Maior elemento: %d", BuscaMaior(p));
+    printf("Maior elemento: %d", BuscaMaior(p));
 }
